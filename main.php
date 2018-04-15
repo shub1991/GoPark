@@ -1,6 +1,3 @@
-<?php 
- session_start();
- ?>
 <!DOCTYPE html>
 <html>
 
@@ -16,22 +13,7 @@
 </head>
 
 <body>
-    <nav class="row navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-        </a>
-        <div class="col-md-6"><?php include 'header.php';?>
-        </div>
-    </nav>
-    <?php 
-         if(isset($_SESSION['Cust_id'])){
-            include('main.php');
-         }
-         else {
-            include('register.php');
-         }
-    
-    ?>
+ <h1>welcome home boy!<h1>
 </body>
 
 </html>
