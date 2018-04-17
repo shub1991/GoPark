@@ -1,4 +1,4 @@
- <div class="container-fluid">
+ <div class="container-fluid" id="reg" >
         <div class="row">
             <div class="col-md-6">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

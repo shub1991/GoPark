@@ -13,12 +13,13 @@
         crossorigin="aonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js" integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M"
         crossorigin="anonymous"></script>
+     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
     <nav class="row navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            <img src="resource/img/logo.jpg" width="60" height="60" alt="">
         </a>
         <div class="col-md-6"><?php include 'header.php';?>
         </div>
