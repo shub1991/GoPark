@@ -68,11 +68,12 @@
     <div class="row">
     <?php include 'includes/parking.php';
     echo '<table class="table table-hover">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Address</th>
         <th scope="col">Parking Space</th>
+        <th scope="col">Available Space</th>
       </tr>
     </thead><tbody>';
     foreach($parkings as $park)
