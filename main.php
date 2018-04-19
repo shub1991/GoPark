@@ -60,10 +60,23 @@
   <body>
   <div class="container">
     <?php
-      echo '<h2> Welcome '.$_SESSION['Cust_first'].'</h2>';
+      echo '<h2> Welcome '.$_SESSION['Cust_first'].'</h2>';                                          
     ?>
     <div class="row">
     <div class=col-lg-8 id="map"></div>
+    </div>
+    <div class="form-group row">
+      <label for="start" class="col-1 col-form-label">Start</label>
+      <div class="col-2">
+        <input class="form-control" type="time" value="13:45:00" id="start">
+      </div>
+      <label for="end" class="col-1 col-form-label">End</label>
+      <div class="col-2">
+        <input class="form-control" type="time" value="13:45:00" id="end">
+      </div>
+      <div class="form-group col-6">
+      <button type="submit" id="search" class="btn btn-primary">Search</button>
+      </div>
     </div>
     <div class="row">
     <?php include 'includes/parking.php';
@@ -82,6 +95,7 @@
       <td>'.$park->park_name.'</td>
       <td>'.$park->park_address.'</td>
       <td>'.$park->park_total.'</td>
+      <td id='.$park->park_id.' data-available='.$park->park_total.'>'.$park->available.'</td>
     </tr>';}
       '
     </tbody>
