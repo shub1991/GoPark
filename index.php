@@ -23,18 +23,25 @@
         <a class="navbar-brand" href="#">
             <img src="resource/img/logo.jpg" width="60" height="60" alt="">
         </a>
-        <div class="col-md-6"><?php include 'header.php';?>
+        <div class="col-md-6">
+         <?php include 'header.php';?>
         </div>
     </nav>
-    <?php 
-         if(isset($_SESSION['Cust_id'])){
-            include('main.php');
-         }
-         else {
-            include('register.php');
-         }
+    <div id="book" style="display:none;">
     
-    ?>
+    </div>
+    <div id="main">
+        <?php 
+            if(isset($_SESSION['Cust_id'])){
+                include('main.php');
+            }
+            else {
+                include('register.php');
+            }
+    
+        ?>
+    </div>
+    
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <style>
       #map {
         width: 100%;
@@ -90,7 +91,7 @@
       </tr>
     </thead><tbody>';
     foreach($parkings as $park)
-    {echo '<tr>
+    {echo '<tr onclick="myFunction('.$park->park_id.')">
       
       <td>'.$park->park_name.'</td>
       <td>'.$park->park_address.'</td>
